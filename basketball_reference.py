@@ -35,9 +35,11 @@ if __name__ == "__main__":
                ptsAllowed = int (columns[18].text)
                blocks = int (columns[34].text)
                turnovers = int(columns[35].text)
+               three_point_pct = float (columns[26].text)
+               offensive_reb = int(columns[30].text)
                
                
-               stats = [name, wins, losses, ptsFor, ptsAllowed, blocks, turnovers]
+               stats = [name, wins, losses, ptsFor, ptsAllowed, blocks, turnovers, three_point_pct, offensive_reb]
           
                print (stats)
           
