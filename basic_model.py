@@ -17,8 +17,9 @@ class RankingModel:
     def build_and_compile_model(norm):
         model = keras.Sequential([
             norm,
-            keras.layers.Dense(256, activation='relu'),
+            keras.layers.Dense(128, activation='elu'),
             keras.layers.Dense(64, activation='relu'),
+            keras.layers.LSTM(32, activation='elu'),
             keras.layers.Dense(1)
         ])
 
@@ -36,7 +37,7 @@ def plot_loss(history):
     plt.plot(history.history['val_loss'], label='val_loss')
     plt.ylim([0, 10])
     plt.xlabel('Epoch')
-    plt.ylabel('Error [MPG]')
+    plt.ylabel('Error [Round or Rank]')
     plt.legend()
     plt.grid(True)
 
@@ -53,8 +54,8 @@ def train(Ranker):
     test_dataset = Ranker.dataset.drop(train_dataset.index)
 
     # inspect data of base stats that impact tournament success
-    inspection = input("Do you want to inspect the data?")
-    if inspection == 'yes':
+    inspection = input("Do you want to inspect the data? (y/n)")
+    if inspection == 'y':
         # first one is the result of the function
         sns.pairplot(train_dataset[['Round', 'PPG', 'MOV', 'Weight']], diag_kind='kde')
         train_dataset.describe().transpose()
@@ -65,14 +66,14 @@ def train(Ranker):
     train_labels = train_features.pop('Round')
     test_labels = test_features.pop('Round')
 
-    if inspection == 'yes':
+    if inspection == 'y':
         train_dataset.describe().transpose()[['mean', 'std']]
 
     # setup normalizing layer
     normalizer = tf.keras.layers.Normalization(axis=-1)
     normalizer.adapt(np.array(train_features))
 
-    if inspection == 'yes':
+    if inspection == 'y':
         print(normalizer.mean.numpy())
 
         first = np.array(train_features[:1])
@@ -84,7 +85,7 @@ def train(Ranker):
 
     Ranker.build_and_compile_model(normalizer)
 
-    if inspection == 'yes':
+    if inspection == 'y':
         Ranker.model.summary()
 
     # training the model
@@ -94,7 +95,7 @@ def train(Ranker):
         validation_split=0.2,
         verbose=0, epochs=100)
 
-    if inspection == 'yes':
+    if inspection == 'y':
         plot_loss(history)
 
     # results to evaluate with
