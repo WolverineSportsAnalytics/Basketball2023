@@ -203,13 +203,10 @@ def fillTable(table, links):
             if ((data is None) == False):
                 print("Adding: " + str(data[0]))
 
-                types = list(range(85))
                 for index, stat in enumerate(data):
                     if stat in ('', None):
-                        types[index] = "NULL"
                         data[index] = "NULL"
                     else:
-                        types[index] = '%s'
                         data[index] = "'" + data[index] + "'"
 
                 statement = "INSERT INTO " + str(
@@ -273,4 +270,4 @@ def scrapeYear(year, table):
 # To fill a table, create the table in the SQL database (if it hasn't already been created) using
 # the formatting of the other tables ([YEAR]_Stats)
 # Then just run the command scrapeYear([YEAR], [TABLE NAME]) and let it run for 20-30 minutes.
-# scrapeYear(2009, "2009_Stats")
+# scrapeYear(2006, "2006_Stats")
