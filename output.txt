@@ -1,0 +1,69 @@
+                      Team  results (lower is better)
+0                  Alabama   32.398
+1                  Arizona   27.005
+2              Arizona St.   46.060
+3                 Arkansas   31.048
+4                   Auburn   31.124
+5                   Baylor   19.159
+6                Boise St.   32.625
+7               Charleston   41.203
+8                  Colgate   50.741
+9              Connecticut   19.866
+10               Creighton   13.199
+11                   Drake   43.067
+12                    Duke   20.653
+13     Fairleigh Dickinson   66.847
+14        Florida Atlantic   25.398
+15                  Furman   46.937
+16                 Gonzaga   25.539
+17            Grand Canyon   48.359
+18                 Houston    9.830
+19                  Howard   61.396
+20                Illinois   36.716
+21                 Indiana   30.616
+22                    Iona   44.651
+23                    Iowa   42.192
+24                Iowa St.   14.752
+25                  Kansas   15.168
+26              Kansas St.   28.201
+27            Kennesaw St.   53.565
+28                Kent St.   46.553
+29                Kentucky   25.074
+30               Louisiana   51.597
+31               Marquette   20.827
+32                Maryland   28.172
+33                 Memphis   34.460
+34                Miami FL   32.023
+35            Michigan St.   33.264
+36         Mississippi St.   32.038
+37                Missouri   35.608
+38             Montana St.   54.843
+39              N.C. State   34.085
+40                  Nevada   40.918
+41       Northern Kentucky   52.780
+42            Northwestern   32.136
+43            Oral Roberts   21.425
+44                Penn St.   33.718
+45              Pittsburgh   45.242
+46               Princeton   54.043
+47              Providence   42.872
+48                  Purdue   11.385
+49            Saint Mary's   18.627
+50           San Diego St.   17.658
+51  Southeast Missouri St.   66.883
+52                     TCU   26.460
+53               Tennessee   16.747
+54                   Texas   14.035
+55               Texas A&M   30.600
+56  Texas A&M Corpus Chris   59.988
+57          Texas Southern   67.990
+58        UC Santa Barbara   47.945
+59                    UCLA   15.592
+60           UNC Asheville   54.867
+61                     USC   35.671
+62                Utah St.   36.063
+63                     VCU   41.081
+64                 Vermont   52.332
+65                Virginia   33.258
+66           West Virginia   23.923
+67                  Xavier   34.786
