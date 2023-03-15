@@ -24,7 +24,7 @@ def plot_loss(history):
     plt.plot(history.history['loss'], label='loss')
     plt.plot(history.history['val_loss'], label='val_loss')
     plt.xlabel('Epoch')
-    plt.ylabel('Error [Round or Rank]')
+    plt.ylabel('Error [Rank]')
     plt.legend()
     plt.grid(True)
 
