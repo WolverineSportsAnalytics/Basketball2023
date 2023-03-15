@@ -7,6 +7,7 @@ Contents:
 * CSV_Merger.ipynb: merges two .csv files if their 'Team' column is identical
 * Json_format.ipynb: converts a .csv into a more easily readable .json file
 * merger.py: merges two .csv files using 'Team' column with an outer join
+* Module1.bas: Finds and changes many names in an Excel file, creating a column with the changed values
 * A variety of other data files and versions
 
 ## Download
