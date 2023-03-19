@@ -2,11 +2,11 @@
 For basketball project team winter 2023
 
 Contents:
-* main.py: runs the model on a given .csv file
-* project_marchmadness_scraping.py: scrapes data from the given year on basketball reference
-* CSV_Merger.ipynb: merges two .csv files if their 'Team' column is identical
-* Json_format.ipynb: converts a .csv into a more easily readable .json file
-* merger.py: merges two .csv files using 'Team' column with an outer join
+* main.py: Runs the model on a given .csv file
+* project_marchmadness_scraping.py: Scrapes data from the given year on basketball reference
+* CSV_Merger.ipynb: Serges two .csv files if their 'Team' column is identical
+* Json_format.ipynb: Converts a .csv into a more easily readable .json file
+* merger.py: Merges two .csv files using 'Team' column with an outer join
 * Module1.bas: Finds and changes many names in an Excel file, creating a column with the changed values
 * A variety of other data files and versions
 
