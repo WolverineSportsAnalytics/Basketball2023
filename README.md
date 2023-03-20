@@ -5,7 +5,7 @@ Contents:
 * main.py: Runs the model on a given .csv file
 * project_marchmadness_scraping.py: Scrapes data from the given year on basketball reference
 * CSV_Merger.ipynb: Merges two .csv files if their 'Team' column is identical
-* Json_format.ipynb: Converts a .csv into a more easily readable .json file
+* Json_format.ipynb: Converts a .csv into a .json file
 * merger.py: Merges two .csv files using 'Team' column with an outer join
 * Module1.bas: Implements a function that finds and changes many names in an Excel file, creating a column with the changed values
 * A variety of other data files and versions
